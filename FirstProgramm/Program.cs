@@ -6,15 +6,15 @@ namespace FirstProgramm
     {
         static void Main(string[] args)
         {
-            string Name = "Anna";
-            byte Age = 23;
-            bool Pet = true;
-            double Shoe = 39.5;
-
-            Console.WriteLine("My mame is " + Name);
-            Console.WriteLine("My age " + Age);
-            Console.WriteLine("Do I have a pet? " + Pet);
-            Console.WriteLine("My shoe size is " + Shoe);
-        }
+            Console.Write("Введите имя: ");
+            string Name = Console.ReadLine();
+            Console.Write("Введите свой возраст: ");
+            var Age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Вас зовут {Name} и Вам {Age} года");
+            Console.Write("Введите Вашу дату рождения: ");
+            var Birthdate = Console.ReadLine();
+            Console.WriteLine($"Вы родились {Birthdate}");
+            Console.ReadKey();
+        } 
     }
 }
