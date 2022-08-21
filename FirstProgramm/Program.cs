@@ -7,7 +7,7 @@ namespace FirstProgramm
         static void Main(string[] args)
         {
             string Name = "Anna";
-            int Age = 23;
+            byte Age = 23;
             bool Pet = true;
             double Shoe = 39.5;
 
